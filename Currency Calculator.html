@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currency calculator</h1>
+    <script>
+        let  Amount = 7800;
+
+        let note2000 = 0,note1000 = 0,note500 = 0,note200 = 0,note100 = 0
+
+        if(Amount>=2000){
+            note2000 = Math.trunc(Amount/2000)
+            Amount = Amount%2000
+        }
+        if(Amount>=1000){
+             note1000 = Math.trunc(Amount/1000)
+            Amount = Amount%1000
+        }
+        if(Amount>=500){
+             note500 = Math.trunc(Amount/500)
+            Amount = Amount%500
+        }
+        if(Amount>=200){
+             note200 = Math.trunc(Amount/200)
+            Amount = Amount%200
+        }
+        if(Amount>=100){
+             note100 = Math.trunc(Amount/100)
+            
+        }
+
+        console.log(`${note2000} notes of 2000 `);
+        console.log(`${note1000} notes of 1000 `);
+        console.log(`${note500} notes of  500 `);
+        console.log(`${note200} notes of 200 `);
+        console.log(`${note100} notes of 100 `);
+
+
+    </script>
+</body>
+</html>
