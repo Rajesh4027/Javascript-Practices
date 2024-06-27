@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Operation</title>
+</head>
+<body>
+    <h1>Date Operation</h1>
+    <script>
+        let d1 = new Date()
+        let d2 = d1.getDay()
+        console.log(d2); // its return one decimal value 
+
+       function main(){
+        let date = new Date()
+        let getDate = date.getDay()
+
+        let toDay = "Today is "
+
+        switch(getDate){
+            case 0:
+                toDay+="Sunday"
+                break;
+            case 1:
+                toDay+="Monday"
+                break;
+            case 2:
+                toDay+="Tuesday"
+                break;
+            case 3:
+                toDay+="Wednesday"
+                break;
+            case 4:
+                toDay+="Thursday"
+                break;
+            case 5:
+                toDay+="Friday"
+                break;
+            case 6:
+                toDay+="Saturday"
+                break;
+            default:
+                console.log("Invalid day");
+        }
+        console.log(toDay);
+       }
+       main();
+    </script>
+</body>
+</html>
