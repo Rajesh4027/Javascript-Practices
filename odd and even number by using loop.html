@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <h1>for looping </h1>
+    <script>
+        //even number
+        let i;
+        let str = ""
+        for(i =1;i<=20;i++){
+           
+            if(i<=19){
+               if(i%2==0){
+                 str = str+i+","
+               }
+            }
+            else{
+                str+=i
+            }
+        
+    }
+    console.log(str);
+    //odd number
+    let j;
+    let str1 = ""
+
+    for(j=1;j<=20;j++){
+        if(j<=19){
+            if(j%2!==0){
+                str1=str1+j+","
+            }
+        }
+        else{
+            str1+=j
+        }
+    }
+    console.log(str1);
+    </script>
+</body>
+</html>
