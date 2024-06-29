@@ -56,18 +56,32 @@
         //Inner function and outer function
 
 
-        function outer(){
-            let a = 23
+        // function outer(){
+        //     let a = 23
 
-            function inner(){
-                let b = 40
-                console.log(a,b);
-            }
-            return inner;
+        //     function inner(){
+        //         let b = 40
+        //         console.log(a,b);
+        //     }
+        //     return inner;
+        // }
+        // let n1 = outer()
+        // console.log(n1);
+        // n1()
+
+        //Unreachable Statement in function
+
+        main()
+        function main(){
+            let a = 23
+            let b = 34
+            console.log(a+b);
+            return 
+            console.log(a*b);
+            console.log(a/b);
         }
-        let n1 = outer()
-        console.log(n1);
-        n1()
+   
+        
         
        
     </script>
