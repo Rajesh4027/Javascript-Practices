@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <script>
+        main();
+        function main(){
+            console.log("main starts");
+            m1()
+            console.log("main ends");
+        }
+
+        function m1(){
+            console.log("m1 starts");
+            return
+            console.log("m1 ends");
+        }
+
+        main1()
+        function main1(){
+            let a =10
+            m2(a)
+            console.log(a);
+            console.log("aisjdhf",m2(a));
+
+        }
+        function m2(a){
+            a=a*10
+            console.log(a);
+        }
+
+
+        let a = +prompt("enter a number1")
+        let b = +prompt("enter a number2")
+
+        let result = calc(a,b,add)
+        console.log(`${a} + ${b} --> ${result}`);
+
+
+        function calc(a,b,caltype){
+            return res=caltype(a,b)
+        }
+
+        function add(n1,n2){
+            return res=n1+n2
+        }
+        function sub(n1,n2){
+            return res=n1-n2
+        }
+        
+       
+    </script>
+</body>
+</html>
