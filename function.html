@@ -83,26 +83,45 @@
 
         // argument works in javascript engine
         
+        // main()
+        // function main(){
+        //     model()
+        //     model(1,)
+        //     model(1,2,334,3)
+        //     model(1,2)
+
+        // }
+        // function model(a,b){
+        //     console.log("main starts");
+        //     console.log(a,b);
+        //     console.log("main ends");
+        // }
+
         main()
         function main(){
-            model()
-            model(1,)
-            model(1,2,334,3)
-            model(1,2)
-
+            let i = 0
+            let j = 0
+            j=m1(++i)+m1(i++)
+            console.log(i,j);
         }
-        function model(a,b){
-            console.log("main starts");
-            console.log(a,b);
-            console.log("main ends");
+        function m1(a){
+            return ++a;
         }
 
 
+        //synchronous code executed
+        console.log("synchronous---->");
+        console.log("hi");
+        console.log("how are you?");
+        console.log("what is your next plan?");
 
-       
-        
-
-
+        //asynchronous code executed
+        console.log("asynchronous---->");
+        console.log("hello");
+        setTimeout(function(){
+            console.log("helloworld");
+        },2000)
+        console.log("world");
 
 
         
