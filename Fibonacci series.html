@@ -9,47 +9,52 @@
     <h1>Fibonacci series</h1>
     <script>
         //alternate fibonacci series  number
-        // let a =0
-        // let b =1
-        // let t;
-
-        // for(let i=1;i<10;i++){
-            
-        //     console.log(a);
-        //     t=a+b
-        //     if(i%2==0){
-        //         a=b
-        //     }
-        //     b=t
-            
-        // // }
-
-        //check fibonacci number or not
-
-        let number =4
-        let a= 0
+        let a =0
         let b =1
-        if(number===0 || number===1){
-            console.log(number+" is fibonacci number");
-        }
-        else{
-            let c;
+        let count=1
+        let next_num = 20
+        console.log(a);
+        for(let i=1;count<next_num;i++){
+            
+            
+            let t=a+b
+          
+            a=b
+            b=t
 
-            for(let i=2;;i++){
-                c=a+b
-                if(c===number){
-                    console.log(number+" is fibonacci number");
-                    break;
-                }
-                else if(c>number){
-                    console.log(number+ " is not a fibonacci number");
-                    break;
-                }
-                a=b;
-                 b=c;
+            if(i%2!==0){
+                console.log(a);
+                count++;
             }
             
         }
+
+        //check fibonacci number or not
+
+        // let number =4
+        // let a= 0
+        // let b =1
+        // if(number===0 || number===1){
+        //     console.log(number+" is fibonacci number");
+        // }
+        // else{
+        //     let c;
+
+        //     for(let i=2;;i++){
+        //         c=a+b
+        //         if(c===number){
+        //             console.log(number+" is fibonacci number");
+        //             break;
+        //         }
+        //         else if(c>number){
+        //             console.log(number+ " is not a fibonacci number");
+        //             break;
+        //         }
+        //         a=b;
+        //          b=c;
+        //     }
+            
+        // }
 
     </script>
 </body>
