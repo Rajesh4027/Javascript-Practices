@@ -135,27 +135,41 @@
 
         //Impure function or side effect function
 
-        let count = 0
-        function incrementcounter(){
-            count+=1
-            return count
-        }
-        console.log(incrementcounter());
-        console.log(incrementcounter());
-        console.log(incrementcounter());
+        // let count = 0
+        // function incrementcounter(){
+        //     count+=1
+        //     return count
+        // }
+        // console.log(incrementcounter());
+        // console.log(incrementcounter());
+        // console.log(incrementcounter());
 
-        //another example 
+        // //another example 
 
-        function add(a,b){
-            let no = Math.trunc(Math.random()*1000)
-            return no
-        }
+        // function add(a,b){
+        //     let no = Math.trunc(Math.random()*1000)
+        //     return no
+        // }
 
-        console.log(add(0,1));
-        console.log(add(2,3));
-        console.log(add(2,3));
+        // console.log(add(0,1));
+        // console.log(add(2,3));
+        // console.log(add(2,3));
         
-        
+        //immediately invoked function expression
+        (function(){
+            console.log("object");
+        })();
+
+        (function(a,b){
+            console.log("The multiply value is:",a*b);
+        })(3,4);
+
+        let result = (function(a,b){
+            return a/b
+        })(3,4);
+
+        console.log(`The divisible value is:`,result);
+
        
     </script>
 </body>
