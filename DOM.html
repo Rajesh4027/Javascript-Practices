@@ -13,7 +13,8 @@
 </div> -->
 
 <div>
-    <span id="hi">Goole</span>
+    <span title="hello" id="hi" data-set="this is a test"
+    data-longer-name="dfjaosdjf">Goole</span>
     <span id="bye">Microsoft</span>
 </div>
 
@@ -61,6 +62,11 @@
 
         div.appendChild(spanhi)
 
+        spanhi.removeAttribute("title")
+
+        console.log(spanhi.dataset.longerName);
+
+        spanhi.id = "meow"
 
 
     </script>
