@@ -35,17 +35,37 @@
     
 
         //instance way to use object
-        let car = new Object();
-        car.name = "toyota"
-        car.model = "camry"
-        car.year = 2020
-        car.color = "red"
-        car.started = false
+        // let car = new Object();
+        // car.name = "toyota"
+        // car.model = "camry"
+        // car.year = 2020
+        // car.color = "red"
+        // car.started = false
 
-        console.table(car);
+        // console.table(car);
 
-        console.log("Car details-->");
-        console.log(car.name,'\n',car.model,'\n',car.year,'\n',car.color,'\n',car.started);
+        // console.log("Car details-->");
+        // console.log(car.name,'\n',car.model,'\n',car.year,'\n',car.color,'\n',car.started);
+
+        //function constructor
+
+        function Student(name,age,weight,height,sex,qualification){
+            this.name = name
+            this.age = age
+            this.weight = weight+"kg"
+            this.height = height+"f"
+            this.sex = sex
+            this.qualification = qualification
+        }
+
+        let Stu1 = new Student("Vishnu",22,60,5.5,"male","B.E")
+        let Stu2 = new Student("Aisha",20,60,5,"female","B.Sc")
+        let Stu3 = new Student("Meera",19,60,5.5,"female","B.E")
+        console.table(Stu1);
+        console.table(Stu2);
+        console.table(Stu3);
+
+       
 
 
 
