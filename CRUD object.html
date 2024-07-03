@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD objects</title>
+</head>
+<body>
+    <h1>CRUD Objects</h1>
+    <script>
+
+        let obj= {
+            name:"Maxwell",
+            age : 23,
+            gender: "male"
+        }
+
+        Object.freeze(obj)
+
+        obj.name= "hello world"
+        obj.age= 34
+        obj.color= "brown"
+
+        console.table(obj);
+
+
+
+        let obj1 = {
+            name:"saira",
+            age :23,
+            gender:"female"
+
+        }
+
+        Object.seal(obj1)
+
+        obj1.name="bairavi"
+        obj1.rank="1st"
+
+        console.table(obj1);
+
+        console.log(Object.isSealed(obj));
+
+
+
+
+
+    </script>
+</body>
+</html>
