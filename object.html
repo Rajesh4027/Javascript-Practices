@@ -73,6 +73,36 @@
 
         */
 
+        // let obj = {
+        //     name:"Max",
+        //     age : 22,
+        //     mark:{
+        //         Tamil:66,
+        //         English:80,
+        //         Maths:84,
+        //         Science:89,
+        //         Social_science:70,   
+        //     }
+        // }
+
+        // console.log(obj.name);
+        // console.log(obj.age);
+        // console.log(obj.mark);
+        // console.table(obj.mark);
+
+
+        /* we have to print the value in console  using squre bracket
+        we  provide the key in form of string without using string format
+        it return default value in undefined from javascript engine
+        statically used
+        */
+
+        // console.log(obj[name]);
+        // console.log(obj["name"]);
+        // console.log(obj["age"]);
+        // console.table(obj["mark"]);
+
+
         let obj = {
             name:"Max",
             age : 22,
@@ -85,27 +115,10 @@
             }
         }
 
-        console.log(obj.name);
-        console.log(obj.age);
-        console.log(obj.mark);
-        console.table(obj.mark);
+        let value = prompt("Enter the key")
 
-
-        /* we have to print the value in console  using squre bracket
-        we  provide the key in form of string without using string format
-        it return default value in undefined from javascript engine
-        statically used
-        */
-
-        console.log(obj[name]);
-        console.log(obj["name"]);
-        console.log(obj["age"]);
-        console.table(obj["mark"]);
-
-
-      
-
-
+        console.log(obj[value]);
+        console.log(obj.value);
         
 
 
