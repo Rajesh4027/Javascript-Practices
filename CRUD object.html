@@ -9,40 +9,91 @@
     <h1>CRUD Objects</h1>
     <script>
 
-        let obj= {
-            name:"Maxwell",
-            age : 23,
-            gender: "male"
+        // let obj= {
+        //     name:"Maxwell",
+        //     age : 23,
+        //     gender: "male"
+        // }
+
+        // Object.freeze(obj)
+
+        // obj.name= "hello world"
+        // obj.age= 34
+        // obj.color= "brown"
+
+        // console.table(obj);
+
+
+
+        // let obj1 = {
+        //     name:"saira",
+        //     age :23,
+        //     gender:"female"
+
+        // }
+
+        // Object.seal(obj1)
+
+        // obj1.name="bairavi"
+        // obj1.rank="1st"
+
+        // console.table(obj1);
+
+        // console.log(Object.isSealed(obj));
+
+
+        // let person ={
+        //     name:"Jack",
+        //     age:23,
+        //     job:"Developer"
+        // }
+
+        // console.log(person.name);
+        // console.log(person['age']);
+
+        // let personjob = "job"
+
+        // console.log(person[personjob]);
+
+
+        let objval = {
+            name:"Aravind",
+            age:24,
+            gender:"male",
+            height:6.4+"inches",
+            weight:80+"kg"
         }
 
-        Object.freeze(obj)
+        console.log(objval);
 
-        obj.name= "hello world"
-        obj.age= 34
-        obj.color= "brown"
+        console.table(Object.keys(objval));
 
-        console.table(obj);
+        console.table(Object.entries(objval));
 
 
 
-        let obj1 = {
-            name:"saira",
-            age :23,
-            gender:"female"
+        objval.job="Devops developer"; //adding a new property
 
+        objval.weight=34 //modify an existing property
+
+
+        console.table(objval);
+
+
+        let objvals = {
+            name:"Surya",
+            age:23,
+            weight:60+"kg"
         }
 
-        Object.seal(obj1)
+        console.table(objvals);
 
-        obj1.name="bairavi"
-        obj1.rank="1st"
+       delete objvals.weight
 
-        console.table(obj1);
+       delete objvals.name
 
-        console.log(Object.isSealed(obj));
-
-
-
+        console.table(objvals);
+        
 
 
     </script>
