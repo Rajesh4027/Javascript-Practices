@@ -56,43 +56,63 @@
         // console.log(person[personjob]);
 
 
-        let objval = {
-            name:"Aravind",
-            age:24,
-            gender:"male",
-            height:6.4+"inches",
-            weight:80+"kg"
-        }
+    //     let objval = {
+    //         name:"Aravind",
+    //         age:24,
+    //         gender:"male",
+    //         height:6.4+"inches",
+    //         weight:80+"kg"
+    //     }
 
-        console.log(objval);
+    //     console.log(objval);
 
-        console.table(Object.keys(objval));
+    //     console.table(Object.keys(objval));
 
-        console.table(Object.entries(objval));
-
-
-
-        objval.job="Devops developer"; //adding a new property
-
-        objval.weight=34 //modify an existing property
+    //     console.table(Object.entries(objval));
 
 
-        console.table(objval);
+
+    //     objval.job="Devops developer"; //adding a new property
+
+    //     objval.weight=34 //modify an existing property
 
 
-        let objvals = {
-            name:"Surya",
-            age:23,
-            weight:60+"kg"
-        }
+    //     console.table(objval);
 
-        console.table(objvals);
 
-       delete objvals.weight
+    //     let objvals = {
+    //         name:"Surya",
+    //         age:23,
+    //         weight:60+"kg"
+    //     }
 
-       delete objvals.name
+    //     console.table(objvals);
 
-        console.table(objvals);
+    //    delete objvals.weight
+
+    //    delete objvals.name
+
+    //     console.table(objvals);
+
+
+
+    let obj1 = {      
+        name:"toyoto",
+        speed:200+"km/s",
+        isTrue:true
+
+    }
+
+    let obj2 = Object.assign({},obj1)
+
+    obj2.name = "bmw"
+    obj2.speed = 400+"km/s"
+
+    console.table(obj2);
+    console.table(obj1);
+
+    let obj3= Object.values(obj1)
+    console.table(obj3);
         
 
 
