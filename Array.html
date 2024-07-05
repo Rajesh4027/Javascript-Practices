@@ -11,7 +11,7 @@
     <script>
         //two way to create an arrar
          //1.literal way
-         //2.Instance way
+         //2.Constructor way
         let arr =[]
         arr[0] = "yellow"
         arr[1] = 23
@@ -32,6 +32,27 @@
         ]
 
         console.table(arra);
+
+
+        //Constructor way
+
+        let arr3 = new Array()
+        arr3[0] = "ferrari"
+        arr3[1] = 233
+        arr3[2] = true
+
+        console.table(arr3);
+
+        let arr4 = new Array(1,2,3,['hello',34,34],{
+            name:"🚗",
+            speed:"🪚",
+            color:"☕"
+        },"emoji",2333)
+
+        console.table(arr4);
+
+
+
     </script>
 </body>
 </html>
