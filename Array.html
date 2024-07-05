@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+
+    <script>
+        //two way to create an arrar
+         //1.literal way
+         //2.Instance way
+        let arr =[]
+        arr[0] = "yellow"
+        arr[1] = 23
+        arr[2] = true
+        console.log(arr[1]);
+        console.log(arr[100]);//no boundry checking it returns undefined
+
+
+        let arra = [
+            {
+                
+                name:"toyoto",
+                speed:"200km",
+                color:"red"
+                
+            }
+            ,"rama",23,false,["yellow",23]
+        ]
+
+        console.table(arra);
+    </script>
+</body>
+</html>
