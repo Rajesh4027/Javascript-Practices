@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+            let result = somefunction;
+            console.log(result);
+        }
+        catch(error){
+            console.log("catch error is:",error.message);
+        }
+        finally{
+            console.log("This is run regarless of the result");
+        }
+        
+    </script>
+</body>
+</html>
