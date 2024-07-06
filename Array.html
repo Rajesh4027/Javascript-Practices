@@ -57,38 +57,53 @@
 
         
 
-        let array = [0,,12,23,4,43342,3]
+        // let array = [0,,12,23,4,43342,3]
         
 
 
-        let str =''
-        for(let i=0;i<array.length;i++){
-            str=str+" "+array[i]
-        }
-        console.log(str);
+        // let str =''
+        // for(let i=0;i<array.length;i++){
+        //     str=str+" "+array[i]
+        // }
+        // console.log(str);
 
 
 
-        let arr = {
-            name:"hellomyname",
-            age:23,
-            color:"brown",
-            height:"34.2"
-        }
+        // let arr = {
+        //     name:"hellomyname",
+        //     age:23,
+        //     color:"brown",
+        //     height:"34.2"
+        // }
 
-        let str1=""
+        // let str1=""
 
-        for(let x in arr){
-           console.log(x);
-           console.log(arr[x]);
-        }
+        // for(let x in arr){
+        //    console.log(x);
+        //    console.log(arr[x]);
+        // }
 
-        let arry = [,23,23,23,2,434324,2,34,3,,23]
+        // let arry = [,23,23,23,2,434324,2,34,3,,23]
 
 
-        for(let y of arry){
-            console.log(y);
-        }
+        // for(let y of arry){
+        //     console.log(y);
+        // }
+
+
+        let arr = [23,23,2,4,3,32,]
+
+        let arr1 = arr.slice(0,4)
+        console.log(arr1);//its not modify the actual value
+        console.log(arr);
+
+        let arr3 = arr.splice(3,2,"fasd","sssss","sss")
+        console.log(arr3);//splice method we can modify our existing array that means at the same time only we can insert and delete element
+        console.log(arr);
+        
+
+
+
        
 
 
